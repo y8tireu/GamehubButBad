@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budget Cookie Clicker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <div class="cookie-container">
+      <h1 id="title">Your Royal Bakery</h1>
+      <p id="cookie-count">0 cookies</p>
+      <button id="cookie-button">🍪</button>
+      <p id="cookies-per-second">per second: 0</p>
+    </div>
+
+    <div class="store">
+      <h2>Store</h2>
+      <div class="store-item" onclick="buyUpgrade('cursor')">
+        <p>Cursor</p>
+        <p>Cost: <span id="cursor-cost">15</span> cookies</p>
+        <p>+0.1 cookies/sec</p>
+      </div>
+      <div class="store-item" onclick="buyUpgrade('grandma')">
+        <p>Grandma</p>
+        <p>Cost: <span id="grandma-cost">100</span> cookies</p>
+        <p>+1 cookie/sec</p>
+      </div>
+      <div class="store-item" onclick="buyUpgrade('farm')">
+        <p>Farm</p>
+        <p>Cost: <span id="farm-cost">500</span> cookies</p>
+        <p>+5 cookies/sec</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="golden-cookie" onclick="collectGoldenCookie()">🍪</div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #4CAF50;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #aaaaaa;
+    font-size: 1.2em;
+}
+
+.game-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.game {
+    display: block;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    width: 180px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.game:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 255, 127, 0.3);
+}
+
+.game img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: opacity 0.3s ease;
+}
+
+.game:hover img {
+    opacity: 0.9;
+}
+
+h2 {
+    color: #4CAF50;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+p {
+    color: #cccccc;
+    font-size: 1em;
+}
+
